@@ -9,7 +9,9 @@ class TodoItem extends Component {
             <div className='todo-item'>
                 <input onChange={() => this.props.toggleList(this.props.item.id)} type="checkbox"
                        checked={this.props.item.completed}/>
-                <p>{this.props.item.text}</p>
+                <p style={this.props.item.completed ? {textDecoration: 'line-through'} : null}>
+                    {this.props.item.text}
+                </p>
             </div>
         )
     }
