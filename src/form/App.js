@@ -25,6 +25,8 @@ class App extends Component {
                            value={this.state.field}
                            onChange={this.updateField}/>
                 </form>
+                <a href='#/admin'>HI!!!</a>
+                <a href='#/qq'>HI!!!</a>
                 <h1>{this.state.field}</h1>
             </div>
         );
