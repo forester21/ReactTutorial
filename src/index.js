@@ -11,7 +11,8 @@ import "./index.css"
 // import App from "./conditional2/App"
 // import App from "./api/App"
 // import App from "./form/App"
-import App from "./router/App"
+// import App from "./router/App"
+import App from "./form2/App"
 import {BrowserRouter} from "react-router-dom";
 // import {createHashHistory} from 'history'
 
@@ -19,8 +20,6 @@ import {BrowserRouter} from "react-router-dom";
 // ReactDOM.render(<App/>, document.getElementById("root"));
 // ReactDOM.render(<AppTodo/>, document.getElementById("root"));
 // ReactDOM.render(<AppClass/>, document.getElementById("root"));
-
-// const history = createHashHistory();
 
 ReactDOM.render(
     <BrowserRouter>

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Switch, Route, Link} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
 
 const App = () => {
     return (
@@ -18,12 +18,18 @@ const Header = () => {
             <Link to='/sec/1'>GOTO_SEC1</Link>
             <br/>
             <Link to='/sec/2'>GOTO_SEC2</Link>
+            <br/>
+            <Link to='/sec/GO'>
+                <button>
+                    GO321
+                </button>
+            </Link>
         </div>
     )
 };
 
 const Main = () => {
-    return(
+    return (
         <Switch>
             <Route exact path='/' component={First}/>
             <Route path='/sec/:id' component={Second}/>
@@ -32,7 +38,7 @@ const Main = () => {
 };
 
 const First = () => {
-    return(
+    return (
         <div>
             <h1>First</h1>
         </div>
@@ -40,7 +46,7 @@ const First = () => {
 };
 
 const Second = (props) => {
-    return(
+    return (
         <div>
             <h1>Second, {props.match.params.id}</h1>
         </div>
